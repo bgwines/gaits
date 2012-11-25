@@ -26,16 +26,20 @@ the particular beat. Thus, in the whole cycle, each paw stays down
 for n=2 + n=3 = 5 beats.
 
 Here's a diagram for the odd beats (let the dot represent a placed paw) :
-0 •  |  0 •  |  • 0  |  • 0
-• 0  |  0 •  |  0 •  |  • 0
+
+    0 •  |  0 •  |  • 0  |  • 0
+    • 0  |  0 •  |  0 •  |  • 0
+
 Which, if you think about it, is really the only way you can cycle 
 through those four positions if you adhere to each paw staying down 
 for two beats. There are six possible orderings of the four positions 
 (4! arrangements, but /4 for the cycles) . If you think of the above 
 ordering that we know works as the order 234 (1234) , then you see 
 that to avoid jumping from a position to its opposite, i.e.:
-|  0 •  |  • 0  | 
-|  0 •  |  • 0  | 
+
+    |  0 •  |  • 0  | 
+    |  0 •  |  • 0  | 
+
 or the equivalent other (the diagonal mirror) , you have to come up 
 with an order that never pairs 2 and 4 together, like above, nor does 
 it do so with 1 and 3, which would automatically follow -- because 
@@ -51,24 +55,30 @@ that work.
 As for the three-paw steps, you can view the cycle as each next beat. 
 Like so (to view the whole eight-beat cycle, the i^th three-paw beat 
 in this cycle is the beat right after the i^th two-paw step) :
-0 •  |  • •  |  • 0  |  • •
-• •  |  0 •  |  • •  |  • 0
+
+    0 •  |  • •  |  • 0  |  • •
+    • •  |  0 •  |  • •  |  • 0
 
 What about the other five possibilities? For example, how about it be 
 such that the paw that lifts is the next in an anti-clockwise or
 clockwise circle? As in,
-0 •  |  • •  |  • •  |  • 0
-• •  |  0 •  |  • 0  |  • •
+
+    0 •  |  • •  |  • •  |  • 0
+    • •  |  0 •  |  • 0  |  • •
+
 ? Well, if you combine that with the odd beats you get the following:
-  1      2        3       4        5       6       7        8
-0 • |  0 •  |  0 •  |  • •  |  • 0  |  • •  |  • 0  |  • 0
-• 0 |  • •  |  0 •  |  0 •  |  0 •  |  • 0  |  • 0  |  • •
+
+     1      2       3       4       5       6       7       8
+    0 • |  0 •  |  0 •  |  • •  |  • 0  |  • •  |  • 0  |  • 0
+    • 0 |  • •  |  0 •  |  0 •  |  0 •  |  • 0  |  • 0  |  • •
+
 , where 
-                          1|2|3|4|5|6|7|8
-the front left paw goes   0|0|0|•|•|•|•|• , which is OK,
-the front right paw goes  •|•|•|•|0|•|0|0 , which is not,
-the back left paw goes    •|•|0|0|0|•|•|• , which is OK,
-the back right paw goes   0|•|•|•|•|0|0|• , which is not.
+
+                              1|2|3|4|5|6|7|8
+    the front left paw goes   0|0|0|•|•|•|•|• , which is OK,
+    the front right paw goes  •|•|•|•|0|•|0|0 , which is not,
+    the back left paw goes    •|•|0|0|0|•|•|• , which is OK,
+    the back right paw goes   0|•|•|•|•|0|0|• , which is not.
 
 front right and back left don't fit. The other five possibilities don't work, 
 either -- but the mirror of the one that does works with our original mirror 
